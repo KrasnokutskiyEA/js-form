@@ -59,13 +59,15 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: 'asset'
-      },
-      {
-        test: /\.pug$/,
-        use: [{ loader: 'pug-loader' }]
+        type: 'asset/resource'
       }
     ]
+  },
+
+  resolve: {
+    alias: {
+      '@': PATHS.src
+    }
   }
 }
 

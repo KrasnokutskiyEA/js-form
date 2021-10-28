@@ -7,6 +7,58 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello world</h1>
+  <!-- header -->
+  <header>
+    <img id='logo' width="64" height="64" alt="Logo">
+
+    <button>day</button>
+  </header>
+
+  <!-- main -->
+  <main>
+    <form id="form" action="/apply/" method="POST">
+      <label>
+        Ваше имя:
+        <input type="text" name="name" id="name" placeholder="Илон Маск" required autofocus>
+      </label>
+    
+      <label>
+        Почта:
+        <input type="email" name="email" id="email" placeholder="elon@musk.com" required>
+      </label>
+    
+      <label>
+        Возраст:
+        <input type="number" name="age" required>
+      </label>
+    
+      <label>
+        Профессия:
+        <select name="specialization" required>
+          <option value="engineer" selected>Инженер</option>
+          <option value="scientist">Учёный</option>
+          <option value="psychologist">Психолог</option>
+          <option value="other">Другая</option>
+        </select>
+      </label>
+    
+      <label>
+        Я работал в NASA
+        <input type="checkbox" name="nasa-experience" value="1">
+      </label>
+    
+      <label>
+        Фото:
+        <input type="file" accept="image/jpeg" name="photo" required>
+      </label>
+    
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>My awesome form, 2021</p>
+  </footer>
 </body>
 </html>

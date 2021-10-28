@@ -4,11 +4,13 @@
 // reset styles & layout
 @import 'base';
 
-// colors
-@import "colors";
-
 // fonts
 @import 'fonts';
+
+// components
+@import './components/header';
+@import './components/form';
+@import './components/footer';
 
 
 
